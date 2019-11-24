@@ -1,3 +1,3 @@
-# wc-app-template
+# gallery
 
-My boilerplate for 0 dependency web apps built on top of Web Components.
+A simply image gallery application that loads from the file system.
