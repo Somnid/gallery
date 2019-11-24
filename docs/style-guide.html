@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Web App</title>
+		<link rel="manifest" href="manifest.json">
+		<link rel="stylesheet" href="/css/index-dark.css"></link>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/img/icon32x32.png" type="image/png" />
+	</head>
+	<body lang="en">
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <h3>Hello</h3>
+        <h4>Hello</h4>
+        <h5>Hello</h5>
+        <h6>Hello</h6>
+
+        <p>The quick brown fox jumped over the lazy brown dog.</p>
+
+		<button id="button">Button</button>
+        <button class="toggle"></button>
+        <button class="toggle on"></button>
+		<input type="text">
+		<input type="email">
+		<input type="tel">
+		<input type="password">
+		<input type="datetime">
+		<input type="datetime-local">
+		<input type="month">
+		<input type="time">
+		<input type="color">
+		<input type="number">
+		<input type="range">
+		<input type="url">
+		<input type="file">
+		<input type="checkbox">
+		<input type="radio">
+        <textarea>Some Text</textarea>
+        <dialog>Some Dialog</dialog>
+
+        <div class="info">Some info for you!</div>
+        <div class="warn">You sure about that?</div>
+        <div class="error">You shouldn't have done that!</div>
+        <div class="success">That worked!</div>
+
+		<!--<service-worker url="service-worker.js" scope="./"></service-worker>-->
+		<script src="js/components/service-worker.js" type="module"></script>
+        <script src="js/components/app-root.js" type="module"></script>
+        <script>
+            const dialog = document.querySelector("dialog");
+            document.querySelector("#button").addEventListener("click", () => {
+                dialog.show();
+            });
+        </script>
+	</body>
+</html>
